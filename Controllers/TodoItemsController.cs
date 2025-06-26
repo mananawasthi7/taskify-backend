@@ -56,11 +56,11 @@ namespace TaskifyApi.Controllers
 
         }
         
-        [HttpGet("/test")]
-public IActionResult Test()
-{
-    return Ok("Taskify API is working ✅");
-}
+        [HttpGet("test")]
+        public IActionResult Test()
+        {
+            return Ok("Taskify API is working ✅");
+        }
 
     }
 }
