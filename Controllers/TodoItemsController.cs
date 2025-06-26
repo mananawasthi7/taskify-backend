@@ -53,6 +53,14 @@ namespace TaskifyApi.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+
         }
+        
+        [HttpGet("/test")]
+public IActionResult Test()
+{
+    return Ok("Taskify API is working ✅");
+}
+
     }
 }
