@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaskifyApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2b30878ea823b78a34d92d5260f2f4497ff0668")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6a3006269b3f1d197057aa7f238e0d9cdb28969")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaskifyApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaskifyApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

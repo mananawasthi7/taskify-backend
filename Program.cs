@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using TaskifyApi.Data; // Replace with the actual namespace where TodoContext is defined
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
