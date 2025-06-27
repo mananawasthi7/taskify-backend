@@ -1,6 +1,3 @@
-using Microsoft.EntityFrameworkCore;
-using TaskifyApi.Data;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
@@ -22,6 +19,10 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
+
+// ⭐️ ADD THIS TO USE RENDER'S DYNAMIC PORT
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.UseUrls($"http://*:{port}");
 
 var app = builder.Build();
 
