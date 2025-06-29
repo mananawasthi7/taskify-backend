@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins(
                 "http://localhost:5173", 
-                "https://eclectic-mousse-ea4fca.netlify.app",
+                "https://taskify-backend-jyld.onrender.com",
                 "https://*.netlify.app"  // Allow any Netlify subdomain
               )
               .AllowAnyHeader()
