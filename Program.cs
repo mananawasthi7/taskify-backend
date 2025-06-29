@@ -17,7 +17,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowVueApp", policy =>
     {
-        policy.WithOrigins("http://localhost:5173")
+        policy.WithOrigins("http://localhost:5173", "https://eclectic-mousse-ea4fca.netlify.app")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });

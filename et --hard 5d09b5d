@@ -1,0 +1,20 @@
+[33m831b9d8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/main[m[33m)[m Fix: adjusted EF Core analyzer version for Render deployment
+[33m18395f1[m Fix: Removed EFCore.Analyzers to resolve Railway build issue
+[33mf9a8a2b[m Fix: Revert primary constructor to support .NET 6
+[33mf359da4[m Fix: Pin all EF Core packages to 6.0.31 for Railway build
+[33m8b32537[m Fix: added EF Core Analyzers 6.0.27 to fix Railway build
+[33m7f42b07[m Remove Microsoft.AspNetCore.OpenApi (not needed with Swashbuckle)
+[33m5863562[m Fix: set root .csproj to .NET 6.0
+[33me1bc425[m Downgrade to .NET 6.0 and align package versions for Railway
+[33m5791c19[m Initial commit
+[33m5d09b5d[m Fix CORS for Netlify frontend
+[33ma4836a5[m Update TaskifyApi.csproj to ensure SQLite DB is copied to output
+[33m30d5656[m Fix: Include SQLite DB in build output
+[33m52fc7da[m Fix: Updated Program.cs and added missing TodoContext setup
+[33mdd6c556[m Ensure EFCore.Sqlite package is added
+[33mc6a3006[m Fix port binding for Render deployment
+[33mb9fd0eb[m Add test endpoint to verify API
+[33m1ff9593[m Add test endpoint to verify API
+[33m0ff6d3a[m Add Dockerfile for Render deployment
+[33mcb9d73a[m Add Dockerfile for Render deployment
+[33mb2b3087[m Initial commit for Taskify backend
