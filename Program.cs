@@ -8,6 +8,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add health checks
+builder.Services.AddHealthChecks();
+
 // Use SQLite instead of in-memory
 builder.Services.AddDbContext<TodoContext>(options =>
     options.UseSqlite("Data Source=taskify.db"));
@@ -29,6 +32,13 @@ builder.WebHost.UseUrls($"http://*:{port}");
 
 var app = builder.Build();
 
+// Ensure database is created and migrated
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<TodoContext>();
+    context.Database.Migrate();
+}
+
 // Dev middlewares
 if (app.Environment.IsDevelopment())
 {
@@ -42,4 +52,8 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Add health check endpoint
+app.MapHealthChecks("/health");
+
 app.Run();
